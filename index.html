@@ -1,7 +1,7 @@
 <!doctype html>
 <title>Basic Emulator</title><!-- not BASIC! -->
 
-<script src="../libv86.js"></script>
+<script src="libv86.js"></script>
 <script>
 "use strict";
 
@@ -13,13 +13,13 @@ window.onload = function()
         vga_memory_size: 2 * 1024 * 1024,
         screen_container: document.getElementById("screen_container"),
         bios: {
-            url: "../seabios.bin",
+            url: "seabios.bin",
         },
         vga_bios: {
-            url: "../vgabios.bin",
+            url: "vgabios.bin",
         },
         cdrom: {
-            url: "../images/linux.iso",
+            url: "linux.iso",
         },
         autostart: true,
     });
